@@ -111,7 +111,11 @@ The log transform helps, but the trend continues. The Q-Q plot deviates clearly 
 
 From Figure 2, shows the same pattern within each tag, with streetwear having the least number of notes.
 
+![Figure 1: Distribution of engagement: raw notes, log(1+notes) and normal Q-Q plot](https://raw.githubusercontent.com/anandita-3217/Artemis_EDS_Project/main/Figures/fig_distribution.png)
+
 *Figure 1. Distribution of engagement: raw notes, log(1+notes) and normal Q-Q plot.*
+
+![Figure 2: Distribution of engagement by tag](https://raw.githubusercontent.com/anandita-3217/Artemis_EDS_Project/main/Figures/fig_distributions_by_tag.png)
 
 *Figure 2: Distribution of engagement by tag: raw notes, log(1+notes) with a normal curve and Q-Q plots*
 
@@ -128,26 +132,9 @@ Table 4 shows the Kruskal–Wallis results in all four variants. H0 is always re
 
 *Table 3: Kruskal–Wallis test of log(1 + notes) across the five tags*
 
+![Figure 3: Engagement by fashion subculture](https://raw.githubusercontent.com/anandita-3217/Artemis_EDS_Project/main/Figures/fig_tags.png)
+
 *Figure 3: Engagement (log(1 + notes)) by fashion subculture, capped data (outliers hidden).*
-
-## 5.3 Pairwise comparisons
-
-Table 4 lists the ten pairwise comparisons on the capped data. All are statistically significant, but the sizes differ greatly. Streetwear is clearly lowest (a random post from any other tag beats a streetwear post about 75–80% of the time), dark academia is moderately ahead of the middle group (54–57%), and cottagecore, grunge and ootd are separated by only 51–53%. Mean log engagement with 95% bootstrap intervals: dark academia 2.395 (2.348 to 2.439); cottagecore 2.137 (2.089 to 2.186); grunge 2.035 (1.991 to 2.079); ootd 1.917 (1.875 to 1.959); streetwear 0.772 (0.712 to 0.836).
-
-| Tag a | Tag b | P(a > b) | Holm p |
-| --- | --- | --- | --- |
-| cottagecore | dark academia | 0.462 | < 0.001 |
-| cottagecore | grunge | 0.520 | 0.0015 |
-| cottagecore | ootd | 0.534 | < 0.001 |
-| cottagecore | streetwear | 0.781 | < 0.001 |
-| dark academia | grunge | 0.557 | < 0.001 |
-| dark academia | ootd | 0.571 | < 0.001 |
-| dark academia | streetwear | 0.803 | < 0.001 |
-| grunge | ootd | 0.514 | 0.015 |
-| grunge | streetwear | 0.758 | < 0.001 |
-| ootd | streetwear | 0.749 | < 0.001 |
-
-*Table 4: Pairwise Mann–Whitney comparisons (capped data, Holm-adjusted).*
 
 # 6. Analysis and Conclusion
 
